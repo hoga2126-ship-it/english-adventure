@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#fff6e7" />
+    <title>English Adventure</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <button class="avatar" aria-label="プロフィール">🦊</button>
+        <div class="brand"><span>English</span><strong>Adventure</strong></div>
+        <button class="parent-button" id="parentOpen" aria-label="おうちのひとへ">♙ <span>おうちの人</span></button>
+      </header>
+
+      <section class="hero" aria-labelledby="greeting">
+        <div class="sun">☀️</div>
+        <div class="cloud c1">☁️</div><div class="cloud c2">☁️</div>
+        <div class="hero-copy">
+          <p class="eyebrow">きょうも ちいさな ぼうけん！</p>
+          <h1 id="greeting">Hello, Explorer!</h1>
+          <p>3分だけ、英語であそぼう。</p>
+        </div>
+        <div class="mascot" aria-hidden="true">🦊</div>
+      </section>
+
+      <section class="streak-card" aria-label="れんぞくきろく">
+        <div class="flame">🔥</div>
+        <div><strong><span id="streak">0</span> days</strong><small>れんぞくチャレンジ中！</small></div>
+        <div class="stars" id="stars">☆ ☆ ☆ ☆ ☆</div>
+      </section>
+
+      <section class="today" aria-labelledby="todayTitle">
+        <div class="section-heading"><div><p class="eyebrow">TODAY'S ADVENTURE</p><h2 id="todayTitle">きょうの ひとこと</h2></div><span class="minutes">⏱ 3 min</span></div>
+        <article class="phrase-card">
+          <div class="scene">🍎</div>
+          <div class="phrase"><p class="japanese">りんごが ほしいな</p><h3>I want an apple!</h3><p class="reading">アイ ワント アン アップル！</p></div>
+          <button class="listen-button speak" data-say="I want an apple!" aria-label="お手本を聞く">🔊</button>
+        </article>
+        <button class="big-action" id="speakPhrase">🎙️ <span>まねして はなす</span><small>Tap to speak</small></button>
+        <p class="speech-note" id="speechNote">マイクを押して、ゆっくり言ってみよう！</p>
+      </section>
+
+      <section class="play-grid" aria-label="あそびをえらぶ">
+        <button class="play-card quiz-card" id="startQuiz"><span class="card-art">🐻</span><span class="tag">PLAY</span><strong>えいご クイズ</strong><small>みて、えらぼう！</small></button>
+        <button class="play-card talk-card" id="startTalk"><span class="card-art">💬</span><span class="tag">TALK</span><strong>おしゃべり</strong><small>キャラと話そう！</small></button>
+      </section>
+
+      <section class="reward-card"><div class="treasure">🎁</div><div><p class="eyebrow">NEXT REWARD</p><strong>あと <span id="rewardLeft">3</span> こで たからばこ！</strong><div class="progress"><i id="rewardBar"></i></div></div></section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="メインメニュー"><button class="active">⌂<span>ホーム</span></button><button id="navPlay">★<span>あそぶ</span></button><button id="navBook">▤<span>ことば</span></button><button id="navReward">♕<span>ごほうび</span></button></nav>
+
+    <div class="modal" id="modal" hidden><div class="modal-card" role="dialog" aria-modal="true"><button class="close" id="closeModal" aria-label="閉じる">×</button><div id="modalContent"></div></div></div>
+    <script src="app.js"></script>
+  </body>
+</html>

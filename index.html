@@ -35,17 +35,17 @@
       <section class="today" aria-labelledby="todayTitle">
         <div class="section-heading"><div><p class="eyebrow">TODAY'S ADVENTURE</p><h2 id="todayTitle">きょうの ひとこと</h2></div><span class="minutes">⏱ 3 min</span></div>
         <article class="phrase-card">
-          <div class="scene">🍎</div>
-          <div class="phrase"><p class="japanese">りんごが ほしいな</p><h3>I want an apple!</h3><p class="reading">アイ ワント アン アップル！</p></div>
-          <button class="listen-button speak" data-say="I want an apple!" aria-label="お手本を聞く">🔊</button>
+          <div class="scene" id="phraseScene">🍎</div>
+          <div class="phrase"><p class="japanese" id="phraseJapanese">りんごが ほしいな</p><h3 id="phraseEnglish">I want an apple!</h3><p class="reading" id="phraseReading">アイ ワント アン アップル！</p></div>
+          <button class="listen-button speak" id="listenPhrase" data-say="I want an apple!" aria-label="お手本を聞く">🔊</button>
         </article>
         <button class="big-action" id="speakPhrase">🎙️ <span>まねして はなす</span><small>Tap to speak</small></button>
         <p class="speech-note" id="speechNote">マイクを押して、ゆっくり言ってみよう！</p>
       </section>
 
       <section class="play-grid" aria-label="あそびをえらぶ">
-        <button class="play-card quiz-card" id="startQuiz"><span class="card-art">🐻</span><span class="tag">PLAY</span><strong>えいご クイズ</strong><small>みて、えらぼう！</small></button>
-        <button class="play-card talk-card" id="startTalk"><span class="card-art">💬</span><span class="tag">TALK</span><strong>おしゃべり</strong><small>キャラと話そう！</small></button>
+        <button class="play-card quiz-card" id="startQuiz"><span class="card-art" id="quizArt">🐻</span><span class="tag">PLAY</span><strong>えいご クイズ</strong><small>みて、えらぼう！</small></button>
+        <button class="play-card talk-card" id="startTalk"><span class="card-art" id="talkArt">💬</span><span class="tag">TALK</span><strong>おしゃべり</strong><small>キャラと話そう！</small></button>
       </section>
 
       <section class="reward-card"><div class="treasure">🎁</div><div><p class="eyebrow">NEXT REWARD</p><strong>あと <span id="rewardLeft">3</span> こで たからばこ！</strong><div class="progress"><i id="rewardBar"></i></div></div></section>
